@@ -9,13 +9,15 @@
 :root{--ink:#493849;--pink:#f7dce7;--rose:#efb6ca;--cream:#fffaf6;--blue:#dcecf3;--lilac:#e9e2f5}
 *{box-sizing:border-box}body{margin:0;background:linear-gradient(145deg,#fff6f2,#fce8ef 55%,#e9f3f6);color:var(--ink);font:16px/1.5 ui-rounded,"Trebuchet MS",system-ui,sans-serif;min-height:100vh}
 .wrap{max-width:980px;margin:auto;padding:26px 18px 40px}.top{text-align:center;margin-bottom:20px}.eyebrow{letter-spacing:.14em;text-transform:uppercase;font-size:.72rem;font-weight:800;color:#a66b86}.top h1{font-size:clamp(2rem,6vw,3.5rem);line-height:1.05;margin:7px 0}.top p{margin:8px 0;color:#806a7b}
-.app{display:grid;grid-template-columns: minmax(240px,.8fr) minmax(300px,1.2fr);gap:18px;align-items:stretch}
-.panel{background:#ffffffd9;border:1px solid #efd9e2;border-radius:26px;box-shadow:0 12px 35px #8b60701a;overflow:hidden}
+.app{display:grid;grid-template-columns:minmax(240px,.8fr) minmax(300px,1.2fr);gap:18px;align-items:stretch}.panel{background:#ffffffd9;border:1px solid #efd9e2;border-radius:26px;box-shadow:0 12px 35px #8b60701a;overflow:hidden}
 .seal-card{padding:24px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(ellipse at 50% 40%,#fff 0,#fff8fa 62%,#f8e8ef 100%)}
-.seal-frame{width:min(100%,280px);aspect-ratio:1;border-radius:50%;overflow:hidden;border:8px solid white;box-shadow:0 8px 24px #8b607029;background:#e9f2f5;display:grid;place-items:center}
-.seal-frame img{width:100%;height:100%;object-fit:cover}.seal-card h2{margin:17px 0 0;font-size:1.8rem}.status{color:#648d76;font-size:.86rem;font-weight:700}.bio{max-width:300px;color:#806a7b;margin:8px 0 18px}
+.seal-frame{width:min(100%,280px);aspect-ratio:1;border-radius:50%;overflow:hidden;border:8px solid white;box-shadow:0 8px 24px #8b607029;background:#e9f2f5;display:grid;place-items:center}.seal-frame img{width:100%;height:100%;object-fit:cover}
+.seal-card h2{margin:17px 0 0;font-size:1.8rem}.status{color:#648d76;font-size:.86rem;font-weight:700}.bio{max-width:300px;color:#806a7b;margin:8px 0 18px}
 .actions{display:flex;gap:9px;flex-wrap:wrap;justify-content:center}.btn{border:0;border-radius:999px;padding:10px 15px;font:inherit;font-weight:800;cursor:pointer;background:var(--pink);color:#68485a;box-shadow:0 3px 0 #e7bccc;transition:transform .12s}.btn:hover{transform:translateY(-2px)}.btn.blue{background:var(--blue);box-shadow:0 3px 0 #bfd8e4}.btn.lilac{background:var(--lilac);box-shadow:0 3px 0 #d2c6e6}
-.chat{display:flex;flex-direction:column;min-height:610px}.chat-head{padding:18px 20px;border-bottom:1px solid #f0e1e7;display:flex;align-items:center;gap:12px}.mini{width:45px;height:45px;border-radius:50%;object-fit:cover}.chat-head strong{display:block}.chat-head small{color:#648d76}.messages{padding:18px;display:flex;flex:1;flex-direction:column;gap:13px;overflow:auto;max-height:480px}.msg{max-width:84%;padding:11px 14px;border-radius:18px;background:#fff1f5;align-self:flex-start;box-shadow:0 2px 7px #6b4a5a0c;white-space:pre-wrap;overflow-wrap:anywhere}.msg.you{align-self:flex-end;background:#e8f2f6}.msg.bot{background:#f0ebf8}.who{font-size:.72rem;font-weight:900;color:#9b6b83;margin-bottom:3px}.composer{display:flex;gap:9px;padding:15px;border-top:1px solid #f0e1e7}.composer input{min-width:0;flex:1;border:1px solid #e9d5df;border-radius:999px;padding:12px 16px;font:inherit;outline:none;background:#fff}.composer input:focus{border-color:#c98da8;box-shadow:0 0 0 3px #f7dce780}.send{border:0;border-radius:50%;width:46px;height:46px;background:#c77f9e;color:white;font-size:1.2rem;font-weight:900;cursor:pointer}.note{text-align:center;font-size:.78rem;color:#927d8c;margin:16px 0 0}.credits{margin-top:18px;text-align:center;font-size:.8rem;color:#927d8c}.credits a{color:#9a5878}
+.chat{display:flex;flex-direction:column;min-height:610px}.chat-head{padding:18px 20px;border-bottom:1px solid #f0e1e7;display:flex;align-items:center;gap:12px}.mini{width:45px;height:45px;border-radius:50%;object-fit:cover}.chat-head strong{display:block}.chat-head small{color:#648d76}
+.messages{padding:18px;display:flex;flex:1;flex-direction:column;gap:13px;overflow:auto;max-height:480px}.msg{max-width:88%;padding:11px 14px;border-radius:18px;background:#fff1f5;align-self:flex-start;box-shadow:0 2px 7px #6b4a5a0c;white-space:pre-wrap;overflow-wrap:anywhere}.msg.you{align-self:flex-end;background:#e8f2f6}.msg.bot{background:#f0ebf8}.who{font-size:.72rem;font-weight:900;color:#9b6b83;margin-bottom:3px}
+.composer{display:flex;gap:9px;padding:15px;border-top:1px solid #f0e1e7}.composer input{min-width:0;flex:1;border:1px solid #e9d5df;border-radius:999px;padding:12px 16px;font:inherit;outline:none;background:#fff}.composer input:focus{border-color:#c98da8;box-shadow:0 0 0 3px #f7dce780}.send{border:0;border-radius:50%;width:46px;height:46px;background:#c77f9e;color:white;font-size:1.2rem;font-weight:900;cursor:pointer}.send:disabled{opacity:.55;cursor:wait}
+.note{text-align:center;font-size:.78rem;color:#927d8c;margin:16px 0 0}.credits{margin-top:18px;text-align:center;font-size:.8rem;color:#927d8c}.credits a{color:#9a5878}
 @media(max-width:720px){.app{grid-template-columns:1fr}.seal-card{padding:20px}.seal-frame{width:210px}.chat{min-height:520px}.messages{max-height:390px}}
 </style>
 </head>
@@ -24,31 +26,42 @@
 <header class="top"><div class="eyebrow">a cozy little seal clubhouse</div><h1>Hiyori's Hangout 🦭</h1><p>Come chat, share fish, and admire the airplane champion.</p></header>
 <section class="app">
 <aside class="panel seal-card">
-<div class="seal-frame"><img id="hiyori" src="https://media.tenor.com/GY5WNGlTWNMAAAAj/seal-hiyori.gif" alt="Hiyori the spotted seal" onerror="this.onerror=null;this.src='https://media.tenor.com/GY5WNGlTWNMAAAAj/seal-hiyori.gif'"></div>
-<h2>Hiyori</h2><div class="status">● hanging out with us</div>
+<div class="seal-frame"><img id="hiyori" src="https://media.tenor.com/GY5WNGlTWNMAAAAj/seal-hiyori.gif" alt="Hiyori the spotted seal"></div>
+<h2>Hiyori</h2><div class="status" id="status">● ready to chat with you</div>
 <p class="bio">A very important spotted seal. Professional blubber, napper, and airplane enthusiast. 💗</p>
 <div class="actions"><button class="btn" data-action="fish">🐟 Give fish</button><button class="btn blue" data-action="plane">✈️ Airplane!</button><button class="btn lilac" data-action="sleep">💤 Nap time</button></div>
 </aside>
 <section class="panel chat" aria-label="Chatroom">
-<div class="chat-head"><img class="mini" src="https://media.tenor.com/GY5WNGlTWNMAAAAj/seal-hiyori.gif" alt=""><div><strong>The seal chatroom</strong><small>Hiyori, you, and ChatGPT (pretend chat demo)</small></div></div>
-<div class="messages" id="messages" aria-live="polite">
-<div class="msg"><div class="who">Hiyori 🦭</div>blub blub!! welcome to my hangout!! 💗</div>
-<div class="msg bot"><div class="who">ChatGPT</div>HI HIYORI!! I brought snacks. (They are fish.)</div>
-<div class="msg"><div class="who">Hiyori 🦭</div>*does a tiny airplane pose* ✈️</div>
-</div>
-<form class="composer" id="form"><input id="input" maxlength="300" placeholder="Say something to Hiyori..." autocomplete="off" aria-label="Message"><button class="send" aria-label="Send message">➤</button></form>
+<div class="chat-head"><img class="mini" src="https://media.tenor.com/GY5WNGlTWNMAAAAj/seal-hiyori.gif" alt=""><div><strong>The seal chatroom</strong><small id="chat-subtitle">Hiyori is powered by AI ✨</small></div></div>
+<div class="messages" id="messages" aria-live="polite"><div class="msg"><div class="who">Hiyori 🦭</div>HIIII!! Welcome to my clubhouse!! 💗 Ask me anything! I can talk about seals, airplanes, fish, or whatever is on your mind. blub!</div></div>
+<form class="composer" id="form"><input id="input" maxlength="1200" placeholder="Say something to Hiyori..." autocomplete="off" aria-label="Message"><button class="send" id="send" aria-label="Send message">➤</button></form>
 </section>
 </section>
-<p class="note">This is a playful local demo: Hiyori's replies are prewritten, not generated by a live AI.</p>
+<p class="note">Hiyori is an AI character inspired by the real spotted seal. Her replies are generated live, not selected from preset messages. Your recent chat stays in this browser.</p>
 <footer class="credits">Hiyori photo/GIF: <a href="https://tenor.com/view/seal-hiyori-aguhiyori-hiyori-chan-spin-gif-1841504080746469587" target="_blank" rel="noopener">Hiyori sticker on Tenor</a> · Original seal updates: <a href="https://www.instagram.com/aguhiyori/" target="_blank" rel="noopener">@aguhiyori</a></footer>
 </main>
 <script>
-const messages=document.getElementById('messages'),input=document.getElementById('input');
-const replies=['blub blub!! 🦭💕','*wiggles happily*','fish??? FISH???? 🐟','*does airplane pose* ✈️','mlem mlem','*falls asleep* 💤','HIHIHI!!','*happy seal noises*'];
-function add(who,text,kind=''){const el=document.createElement('div');el.className='msg '+kind;const name=document.createElement('div');name.className='who';name.textContent=who;const body=document.createElement('div');body.textContent=text;el.append(name,body);messages.append(el);messages.scrollTop=messages.scrollHeight}
-function hiyori(text){setTimeout(()=>add('Hiyori 🦭',text),350)}
-document.getElementById('form').addEventListener('submit',e=>{e.preventDefault();const value=input.value.trim();if(!value)return;add('You',value,'you');input.value='';hiyori(replies[Math.floor(Math.random()*replies.length)])});
-document.querySelectorAll('[data-action]').forEach(b=>b.addEventListener('click',()=>{const a=b.dataset.action;if(a==='fish'){add('You','*offers Hiyori a fish* 🐟','you');hiyori('FIIIIISH!! NOM NOM NOM 🐟')}if(a==='plane'){add('You','HIYORI, AIRPLANE TIME!!','you');hiyori('✈️✈️✈️ *AIRPLANE SEAL ACTIVATED*')}if(a==='sleep'){add('You','Goodnight, Hiyori! 💗','you');hiyori('zzzz... 💤') }}));
+const messages=document.getElementById('messages'),input=document.getElementById('input'),send=document.getElementById('send'),statusEl=document.getElementById('status');
+const STORAGE_KEY='hiyoris-hangout-chat-v2';
+let history=[];
+try{history=JSON.parse(localStorage.getItem(STORAGE_KEY)||'[]');if(!Array.isArray(history))history=[];}catch{history=[];}
+function add(who,text,kind=''){const el=document.createElement('div');el.className='msg '+kind;const name=document.createElement('div');name.className='who';name.textContent=who;const body=document.createElement('div');body.textContent=text;el.append(name,body);messages.append(el);messages.scrollTop=messages.scrollHeight;}
+function save(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(history.slice(-24)));}catch{}}
+function renderSaved(){for(const m of history){if(m.role==='user')add('You',m.content,'you');else if(m.role==='assistant')add('Hiyori 🦭',m.content);}}
+renderSaved();
+async function talk(text){
+ history.push({role:'user',content:text});save();send.disabled=true;statusEl.textContent='● thinking very hard...';input.disabled=true;
+ const thinking=document.createElement('div');thinking.className='msg';thinking.textContent='Hiyori is thinking... 🦭💭';messages.append(thinking);messages.scrollTop=messages.scrollHeight;
+ try{
+  const response=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:history.slice(-16)})});
+  const data=await response.json();if(!response.ok)throw new Error(data.error||'The seal phone is having trouble.');
+  const answer=String(data.reply||'blub? I lost my train of thought!').slice(0,5000);thinking.remove();add('Hiyori 🦭',answer);history.push({role:'assistant',content:answer});history=history.slice(-24);save();statusEl.textContent='● ready for another chat';
+ }catch(err){thinking.remove();add('Hiyori 🦭','Oh no, my seal phone is having a wobble! 😭 '+err.message+' Try again in a moment.');history.pop();statusEl.textContent='● having a little technical hiccup';}
+ finally{send.disabled=false;input.disabled=false;input.focus();}
+}
+document.getElementById('form').addEventListener('submit',e=>{e.preventDefault();const value=input.value.trim();if(!value||send.disabled)return;add('You',value,'you');input.value='';talk(value);});
+const actions={fish:{you:'*offers Hiyori a fish* 🐟',say:'A FISH!! THANK YOU!! *nom nom nom* 🐟'},plane:{you:'HIYORI, AIRPLANE TIME!!',say:'✈️✈️✈️ *AIRPLANE SEAL ACTIVATED*'},sleep:{you:'Goodnight, Hiyori! 💗',say:'*gets very cozy and curls up for a nap* zzz... 💤'}};
+document.querySelectorAll('[data-action]').forEach(b=>b.addEventListener('click',()=>{const a=actions[b.dataset.action];if(!a)return;add('You',a.you,'you');talk(a.you+'\n(React to what I did!)');}));
 </script>
 </body>
 </html>
